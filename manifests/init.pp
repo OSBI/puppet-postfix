@@ -21,7 +21,7 @@ class postfix {
     }
   file { '/etc/postfix/cacert.pem' :
   ensure => present,
-    source => "puppet:///postfix/Thawte_Premium_server_CA.pem",
+    source => "puppet:///postfix/Thawte_Premium_Server_CA.pem",
 
   }
   exec { "exec postmap" :
